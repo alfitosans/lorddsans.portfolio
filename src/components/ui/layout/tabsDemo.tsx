@@ -1,7 +1,7 @@
 "use client";
 
 
-import { Tabs } from "@/components/ui/tabs";
+import { Tabs } from "../Tabs";
 
 export function TabsDemo() {
   const tabs = [
