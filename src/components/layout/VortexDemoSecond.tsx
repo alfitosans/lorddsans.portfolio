@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Vortex } from "../vortex";
+import { Vortex } from "@/components/ui/vortex";
 
 export default function VortexDemoSecond() {
   return (

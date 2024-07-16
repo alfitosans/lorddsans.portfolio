@@ -1,5 +1,5 @@
-import { TabsDemo } from "@/components/ui/layout/tabsDemo";
-import Vortex from "@/components/ui/layout/VortexDemoSecond";
+import { TabsDemo } from "@/components/layout/tabsDemo";
+import Vortex from "@/components/layout/VortexDemoSecond";
 
 export default function Home() {
   return (
