@@ -1,7 +1,7 @@
 "use client";
 
 
-import { Tabs } from "../Tabs";
+import { Tabs } from "@/components/ui/tabs";
 
 export function TabsDemo() {
   const tabs = [
@@ -35,31 +35,12 @@ export function TabsDemo() {
         </div>
       ),
     },
-    {
-      title: "Content",
-      value: "content",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Content tab</p>
-          <DummyContent />
-        </div>
-      ),
-    },
-    {
-      title: "Random",
-      value: "random",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-gradient-to-br from-purple-700 to-violet-900">
-          <p>Random tab</p>
-          <DummyContent />
-        </div>
-      ),
-    },
+   
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40">
-      <h1 className="text-4xl font-bold text-white mb-8">Portfolio</h1>
+    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-center justify-start my-40">
+      <h1 className="text-4xl font-bold mb-8">Portfolio</h1>
       <Tabs tabs={tabs} />
     </div>
   );
@@ -68,6 +49,7 @@ export function TabsDemo() {
 const DummyContent = () => {
   return (
     <div className="flex flex-col items-start justify-start gap-4 mt-6">
+      <h3 className="text-2xl font-bold">Lorem Ipsum</h3>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
